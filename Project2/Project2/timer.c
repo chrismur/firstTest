@@ -5,7 +5,7 @@ void wait(int sec)
 {
 	clock_t end_wait;
 	end_wait = clock() + sec * CLK_TCK;
-
+	printf("HELLO");
 	while (clock() < end_wait) {}
 }
 
